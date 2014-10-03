@@ -67,9 +67,9 @@
         }
     },
     "fontSwatch": {
-       "title": "Glegoo",
+       "title": "Lato / Merriweather",
         "font1": {
-            "font-family": "\"Glegoo\", Monaco, \"Lucida Console\", monospace",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "26px",
             "font-weight": "400",
             "line-height": "38px",
@@ -77,7 +77,7 @@
             "letter-spacing": "inherit"
         },
         "font2": {
-            "font-family": "\"Glegoo\", Monaco, \"Lucida Console\", monospace",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "26px",
             "font-weight": "inherit",
             "line-height": "38px",
@@ -85,7 +85,7 @@
             "letter-spacing": "inherit"
         },
         "font3": {
-            "font-family": "\"Glegoo\", Monaco, \"Lucida Console\", monospace",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
             "font-size": "20px",
             "font-weight": "400",
             "line-height": "30px",
@@ -93,7 +93,7 @@
             "letter-spacing": "inherit"
         },
         "font4": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "26px",
@@ -101,7 +101,7 @@
             "letter-spacing": "inherit"
         },
         "font5": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "26px",
@@ -109,7 +109,7 @@
             "letter-spacing": "inherit"
         },
         "font6": {
-            "font-family": "\"Glegoo\", Monaco, \"Lucida Console\", monospace",
+            "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "26px",
@@ -120,25 +120,25 @@
             "background-color-hover": "@color-swatch7"
         },
         "font7": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
-            "font-size": "14px",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "15px",
             "font-weight": "400",
             "line-height": "26px",
             "color": "@color-swatch7",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch3",
-            "background-color-hover": "darken(@color-swatch3,5%)"
+            "background-color-hover": "darken(@color-swatch3,7%)"
         },
         "font8": {
-            "font-family": "\"Glegoo\", Monaco, \"Lucida Console\", monospace",
-            "font-size": "18px",
+            "font-family": "\"Merriweather\", Georgia, serif",
+            "font-size": "15px",
             "font-weight": "400",
-            "line-height": "30px",
+            "line-height": "27px",
             "color": "@color-swatch4",
             "letter-spacing": "inherit"
         },
         "font9": {
-            "font-family": "\"Helvetica\", Arial, sans-serif",
+            "font-family": "\"Merriweather\", Georgia, serif",
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "26px",
@@ -146,11 +146,11 @@
             "letter-spacing": "inherit"
         },
         "font10": {
-            "font-family": "\"Glegoo\", Monaco, \"Lucida Console\", monospace",
-            "font-size": "26px",
+            "font-family": "\"Lato\", Geneva, Tahoma, sans-serif",
+            "font-size": "24px",
             "font-weight": "400",
-            "line-height": "38px",
-            "color": "@color-swatch6",
+            "line-height": "34px",
+            "color": "@color-swatch4",
             "letter-spacing": "inherit"
         }
     }

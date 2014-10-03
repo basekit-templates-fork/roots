@@ -1,13 +1,17 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
-.bk-header {
+.bk-header, .wrapper {
     width: 90%;
     margin: 0 5%;
     @media only screen and (min-width: 1140px) {
         width: 1024px;
         margin: 0 auto;
     }
-
+    @media @mobile {
+        width: 100%;
+        margin: 0 auto;
+        padding: 0 5% 5%;
+    }
 }
 
 .canvas {
@@ -43,6 +47,18 @@
         padding: 1.5em 0 0;
         border: none;
     }
+}
+
+/* =======
+    Mixins 
+    ====== */
+
+.transition (@prop: all, @time: 0.5s, @ease: ease) {
+    -webkit-transition: @prop @time @ease;  
+    -moz-transition:    @prop @time @ease;
+    -ms-transition:     @prop @time @ease; 
+    -o-transition:      @prop @time @ease;  
+    transition:         @prop @time @ease;
 }
 
 /* ===============================
@@ -116,6 +132,14 @@
     }
 }
 
+/* Fix for nav overlay on editor */
+
+.widget.extendednavigation .bk-overlay {
+    @media @tablet {
+        width: 100% !important;
+    }
+}
+
 /* ===============================
    HEADER
    =============================== */
@@ -132,6 +156,9 @@ header.bk-header.clearfix {
     .logo, .companyname {
         text-align: center;
     }
+    @media @mobile {
+        margin: 2em 0 1.5em;
+    }
 }
 
 // Profile widget styles
@@ -139,21 +166,20 @@ header.bk-header.clearfix {
     .profile-container {
         text-align: center;
         padding-bottom: 2em;
-        @media only screen and (max-width: 960px) {
-            padding-bottom: 1em;
-        }
         .widget.line {
             padding: 0 0 2em;
             hr.line {
-                width: 30%;
+                width: 20%;
+                background-color: darken(@color-swatch2,7%);
+                height: 1px;
+            }
+            @media @mobile {
+                padding-bottom: 1.5em;
             }
         }
         .widget.profile {
             .bk-profile-headline {
                 padding-top: 1.5em;
-            }
-            .bk-profile-strapline {
-                color: @font-swatch9-color;
             }
             span, .bk-profile-address p, .twitter .twitter-content p, ul.twitter p {
                 font-family: @font-swatch8-font-family;
@@ -163,11 +189,11 @@ header.bk-header.clearfix {
                 line-height: @font-swatch8-line-height;
             } 
             a, .bk-profile-email a {
-                font-family: @font-swatch9-font-family;
-                color: @font-swatch9-color;
-                font-size: @font-swatch9-font-size;
-                font-weight: @font-swatch9-font-weight;
-                line-height: @font-swatch9-line-height;
+                font-family: @font-swatch8-font-family;
+                color: @color-swatch3;
+                font-size: @font-swatch8-font-size;
+                font-weight: @font-swatch8-font-weight;
+                line-height: @font-swatch8-line-height;
             }
             .bk-profile-address p {
                 display: inline-block;
@@ -347,9 +373,25 @@ button.btn,
     line-height: @font-swatch7-line-height;
     background-color: @font-swatch7-background-color;
     border: none;
+    -webkit-box-shadow: 0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    -moz-box-shadow:    0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    box-shadow:         0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
     &:hover {
         background-color: @font-swatch7-background-color-hover;
         text-decoration: none;
+        .transition( all, 0.5s, ease );
+    }
+}
+
+@media @mobile {
+    .widget.clicktocall a {
+        -webkit-box-shadow: 0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+        -moz-box-shadow:    0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+        box-shadow:         0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+        padding: 12px 10px 12px 38px;
+        &:hover {
+            .transition( all, 0.5s, ease );
+        }
     }
 }
 
@@ -359,11 +401,23 @@ button.btn,
 	padding-left: 40px;
 	padding-right: 16px;
 	display: inline-block;
+    -webkit-box-shadow: 0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    -moz-box-shadow:    0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    box-shadow:         0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    &:hover {
+        .transition( all, 0.5s, ease );
+    }
 }
 
 .basket-summary-empty-cta,
 .ecombasket-summary-link {
 	display: inline-block;
+    -webkit-box-shadow: 0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    -moz-box-shadow:    0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    box-shadow:         0px 3px 0px 0px darken(@font-swatch7-background-color,7%);
+    &:hover {
+        .transition( all, 0.5s, ease );
+    }
 }
 
 /* ===============================
@@ -751,6 +805,47 @@ time.blog-post-published-date {
     margin: 1.5em 0 2.5em;
 }
 
+/* Blog post sharing buttons */
+
+.blog-post-sharing {
+    margin: 2.5em 0;
+    button {
+        margin-right: 5px;
+        &.btn.facebook {
+            background-color: #3b5998;
+            -webkit-box-shadow: 0px 3px 0px 0px darken(#3b5998,18%);
+            -moz-box-shadow:    0px 3px 0px 0px darken(#3b5998,18%);
+            box-shadow:         0px 3px 0px 0px darken(#3b5998,18%);
+             &:hover {
+                background-color: darken(#3b5998,10%);
+                .transition( all, 0.5s, ease );
+            }
+        }
+        &.btn.twitter {
+            background-color: #4099FF;
+            -webkit-box-shadow: 0px 3px 0px 0px darken(#4099FF,15%);
+            -moz-box-shadow:    0px 3px 0px 0px darken(#4099FF,15%);
+            box-shadow:         0px 3px 0px 0px darken(#4099FF,15%);
+            &:hover {
+                background-color: darken(#4099FF,10%);
+                .transition( all, 0.5s, ease );
+            }
+        }
+        &.btn.googleplus {
+            background-color: #d34836;
+            -webkit-box-shadow: 0px 3px 0px 0px darken(#d34836,10%);
+            -moz-box-shadow:    0px 3px 0px 0px darken(#d34836,10%);
+            box-shadow:         0px 3px 0px 0px darken(#d34836,10%);
+            &:hover {
+                background-color: darken(#d34836,10%);
+                .transition( all, 0.5s, ease );
+            }
+        }
+    }
+}
+
+
+
 /* ===============================
   ECOM - BASKET
    =============================== */
@@ -1133,7 +1228,6 @@ a.btn.ecombasket-summary-link {
                             line-height: normal;
                             color: @color-swatch4;
                             border: 1px solid darken(@color-swatch1,7%);
-                            .border-radius(3px);
                             &:hover {
                                 background-color: darken(@color-swatch1,10%);
                             }
