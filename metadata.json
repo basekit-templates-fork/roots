@@ -1,15 +1,23 @@
 {
-    "name":"Shapes",
-    "thumbnail":"shapes.png",
-    "screenshot":"shapes.png",
+    "name":"Roots",
+    "thumbnail":"roots.png",
+    "screenshot":"roots.png",
     "pageTypes": ["default", "home"],
-    "templateType":"menu",
+    "templateType":"standard",
+    "images":[
+            "images/gallery/1.jpg", 
+            "images/gallery/2.jpg", 
+            "images/gallery/3.jpg", 
+            "images/gallery/4.jpg", 
+            "images/gallery/5.jpg", 
+            "images/gallery/6.jpg", 
+            "images/gallery/7.jpg", 
+            "images/gallery/8.jpg", 
+            "images/gallery/9.jpg"
+            ],
     "tags": {
-    "en": ["clean", "menu", "cafe", "bar", "restaurant"],
-    "es": ["limpio", "menú", "cafetería", "bar", "restaurante"],
-    "br": ["limpo", "menu", "cafeteria", "bar", "restaurante"]
+    "en": ["clean", "minimal"]
     },
-    "images":["images/feature-img.jpg"],
     "colorSwatches":
     {
         "Swatch 1": {

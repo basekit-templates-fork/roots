@@ -14,8 +14,30 @@
             </div>
     </header>
     <div class="main wrapper clearfix">
-        {{widget('image', 'image', { 'src': asset('images/feature-img.jpg'), 'title': 'Lorem Ipsum Dolor Sit Amet Vivamus Nederles', 'description': 'Vivamus rhoncus ipsum tellus', 'alt': '', 'fileName': 'feature-img.jpg', 'fileSize': '58kb', 'imageSize': '940 x 648', 'imageWidth': '100%'})|raw}}
-        {{zone('main')|raw}}
+        {{widget('gallery', 'homepagegallery', 
+      {'showDescription': true,
+      'showTitle': true,
+      'images':
+      [
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/1.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/2.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/3.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/4.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/5.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/6.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/7.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/8.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/9.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/10.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/11.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/12.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/13.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/14.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/15.jpg'), 'title':'test title', 'description': 'test desc'},
+      {'imageHeight':'246', 'imageWidth':'246', 'url':asset('/images/gallery/16.jpg'), 'title':'test title', 'description': 'test desc'}
+      ]
+      })|raw}}
+    {{zone('main')|raw}}
     </div> <!--end main -->
     <footer class="bk-footer">
         <div class="wrapper clearfix">
