@@ -481,7 +481,8 @@ button.btn,
 .widget.ecomcheckout table tr td .checkout-quantitybtn button,
 .widget.ecomcheckout .checkout-order-button,
 .basket-summary-empty-cta,
-.blog-post-pagination-page {
+.blog-post-pagination-page,
+.widget.ecombasket .ecombasket-pull {
 	outline: none;
 	cursor: pointer;
 	margin: 0;
@@ -538,6 +539,10 @@ button.btn,
     &:hover {
         .transition( all, 0.5s, ease );
     }
+}
+
+a.btn.ecom-product-go-to-checkout-btn {
+    padding: 12px 14px;
 }
 
 /* ===============================
@@ -1166,13 +1171,14 @@ a.btn.ecombasket-summary-link {
     }
     .ecom-productlist-info, .ecom-featuredproducts-info {
         .ecom-productslist-title, .ecom-featuredproducts-title {
-            font-size: @font-swatch5-font-size;
-            font-weight: @font-swatch5-font-weight;
-            line-height: @font-swatch5-line-height;
+            font-family: @font-swatch3-font-family;
+            font-size: @font-swatch3-font-size;
+            font-weight: @font-swatch3-font-weight;
+            line-height: @font-swatch3-line-height;
             padding: 0;
         }
         .ecom-productlist-price, .ecom-featuredproducts-price {
-            color: @font-swatch5-color;
+            color: lighten(@font-swatch5-color,10%);
         }
     }
     &:hover {
