@@ -21,9 +21,9 @@
     "colorSwatches":
     {
         "Swatch 1": {
-            "color1":"#ffffff",
-            "color2":"#F7F7F7",
-            "color3":"#ed6174",
+            "color1":"#FCFCFC",
+            "color2":"#c5c3bd",
+            "color3":"#76813e",
             "color4":"#5e5c58",
             "color5":"#a19e99",
             "color6":"#5e5c58",
@@ -113,8 +113,8 @@
             "font-size": "14px",
             "font-weight": "400",
             "line-height": "26px",
-            "color": "@color-swatch6",
-            "color-hover": "darken(@color-swatch6,20%)",
+            "color": "@color-swatch2",
+            "color-hover": "@color-swatch6",
             "letter-spacing": "inherit",
             "background-color": "@color-swatch7",
             "background-color-hover": "@color-swatch7"

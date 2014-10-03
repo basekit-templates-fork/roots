@@ -1,5 +1,15 @@
 @import "@{templateCommon}/basekit-bootstrap.less";
 
+.bk-header {
+    width: 90%;
+    margin: 0 5%;
+    @media only screen and (min-width: 1140px) {
+        width: 1024px;
+        margin: 0 auto;
+    }
+
+}
+
 .canvas {
     width: 96%;
     margin: 0 2% 2%;
@@ -22,7 +32,7 @@
     padding: 3em;
     @media only screen and (min-width: 1140px) {
         width: 1024px;
-        margin: 0 auto 5em;
+        margin: 1em auto 5em;
         background-color: @color-swatch1;
         border: 1px solid darken(@color-swatch1,2%);
         padding: 3em;
@@ -117,13 +127,78 @@ header.bk-header.clearfix {
     }
 }
 
-
 .companyheader {
-    margin: 4em 0;
+    margin: 3em 0 2em;
     .logo, .companyname {
         text-align: center;
     }
 }
+
+// Profile widget styles
+
+    .profile-container {
+        text-align: center;
+        padding-bottom: 2em;
+        @media only screen and (max-width: 960px) {
+            padding-bottom: 1em;
+        }
+        .widget.line {
+            padding: 0 0 2em;
+            hr.line {
+                width: 30%;
+            }
+        }
+        .widget.profile {
+            .bk-profile-headline {
+                padding-top: 1.5em;
+            }
+            .bk-profile-strapline {
+                color: @font-swatch9-color;
+            }
+            span, .bk-profile-address p, .twitter .twitter-content p, ul.twitter p {
+                font-family: @font-swatch8-font-family;
+                color: @font-swatch8-color;
+                font-size: @font-swatch8-font-size;
+                font-weight: @font-swatch8-font-weight;
+                line-height: @font-swatch8-line-height;
+            } 
+            a, .bk-profile-email a {
+                font-family: @font-swatch9-font-family;
+                color: @font-swatch9-color;
+                font-size: @font-swatch9-font-size;
+                font-weight: @font-swatch9-font-weight;
+                line-height: @font-swatch9-line-height;
+            }
+            .bk-profile-address p {
+                display: inline-block;
+                padding-bottom: 0;
+                &:after {
+                    content: "\002C";
+                }
+                &:last-child:after {
+                    content: '';
+                }
+            }
+            form fieldset input {
+                border: none;
+                background-color: @color-swatch1;
+            }
+            span.bk-profile-phone {
+                letter-spacing: 1px;
+            }
+            @media @mobile {
+                span, .bk-profile-address p, .twitter .twitter-content p {
+                    font-size: @font-swatch5-font-size;
+                    line-height: @font-swatch5-line-height;
+                } 
+                a, .bk-profile-email a {
+                    font-size: @font-swatch5-font-size;
+                    line-height: @font-swatch5-line-height;
+                }
+            }
+        }
+    }
+
 
 /* ===============================
    FEATURE = IMAGE WIDGET
