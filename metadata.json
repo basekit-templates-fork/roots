@@ -4,17 +4,6 @@
     "screenshot":"roots.png",
     "pageTypes": ["default", "home"],
     "templateType":"standard",
-    "images":[
-            "images/gallery/1.jpg", 
-            "images/gallery/2.jpg", 
-            "images/gallery/3.jpg", 
-            "images/gallery/4.jpg", 
-            "images/gallery/5.jpg", 
-            "images/gallery/6.jpg", 
-            "images/gallery/7.jpg", 
-            "images/gallery/8.jpg", 
-            "images/gallery/9.jpg"
-            ],
     "tags": {
     "en": ["clean", "minimal"]
     },
@@ -31,7 +20,7 @@
         },
         "Swatch 2": {
             "color1":"#ffffff",
-            "color2":"#fff8ee",
+            "color2":"#f7f7f7",
             "color3":"#91bbf2",
             "color4":"#5e5c58",
             "color5":"#a19e99",
@@ -66,6 +55,17 @@
             "color7":"#ffffff"
         }
     },
+    "images":[
+        "images/gallery/1.jpg", 
+        "images/gallery/2.jpg", 
+        "images/gallery/3.jpg", 
+        "images/gallery/4.jpg", 
+        "images/gallery/5.jpg", 
+        "images/gallery/6.jpg", 
+        "images/gallery/7.jpg", 
+        "images/gallery/8.jpg", 
+        "images/gallery/9.jpg"
+    ],
     "fontSwatch": {
        "title": "Lato / Merriweather",
         "font1": {
