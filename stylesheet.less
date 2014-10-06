@@ -49,9 +49,7 @@
     }
 }
 
-a {
-    color: lighten(@color-swatch3,20%);
-}
+
 
 /* =======
     Mixins 
@@ -301,9 +299,6 @@ header.bk-header.clearfix {
         @media @tablet {
             font-size: (@font-swatch4-font-size * 0.8);
         }
-        @media @mobile {
-            font-size: (@font-swatch4-font-size * 0.7);
-        }
         &:after {
             display: block;
             content: '';
@@ -383,7 +378,7 @@ header.bk-header.clearfix {
 	> span:first-of-type,
 	> span a {
 		font-size: .8em;
-        color: lighten(@color-swatch3,20%);
+        color: @color-swatch3;
 		text-decoration: none;
 	}
 	> span a:hover {
@@ -393,7 +388,7 @@ header.bk-header.clearfix {
 
 .twitter-content a {
     span.bk-full-name {
-        color: lighten(@color-swatch3,20%);
+        color: @color-swatch3;
         font-family: @font-swatch3-font-family;
         font-size: @font-swatch3-font-size;
         list-height: @font-swatch3-line-height;
@@ -512,6 +507,7 @@ button.btn,
         padding: 12px 10px 12px 38px;
         &:hover {
             .transition( all, 0.5s, ease );
+            padding: 12px 10px 12px 38px;
         }
     }
 }

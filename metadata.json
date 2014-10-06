@@ -2,7 +2,6 @@
     "name":"Roots",
     "thumbnail":"roots.png",
     "screenshot":"roots.png",
-    "pageTypes": ["default", "home"],
     "templateType":"standard",
     "tags": {
     "en": ["clean", "minimal"]
@@ -12,7 +11,7 @@
         "Swatch 1": {
             "color1":"#FCFCFC",
             "color2":"#c5c3bd",
-            "color3":"#76813e",
+            "color3":"#A3B15B",
             "color4":"#5e5c58",
             "color5":"#a19e99",
             "color6":"#5e5c58",
@@ -30,7 +29,7 @@
         "Swatch 3": {
             "color1":"#ffffff",
             "color2":"#e1e1e1",
-            "color3":"#ff9d4f",
+            "color3":"#FCA764",
             "color4":"#5e5c58",
             "color5":"#a19e99",
             "color6":"#5e5c58",
@@ -38,10 +37,10 @@
         },
         "Swatch 4": {
             "color1":"#FCFCFC",
-            "color2":"#f3f0e0",
-            "color3":"#998a3b",
-            "color4":"#796F65",
-            "color5":"#a19e99",
+            "color2":"#F7F6F2",
+            "color3":"#FF9393",
+            "color4":"#A59E99",
+            "color5":"#97918C",
             "color6":"#5e5c58",
             "color7":"#ffffff"
         },
