@@ -610,7 +610,7 @@ hr {
 		}
 	}
 	.content-wrapper {
-		background: fadeout(@color-swatch1, 25%);
+		background-color: @color-swatch2;
 		text-shadow: none;
 		.title {
 			font-weight: @font-swatch3-font-weight;
@@ -624,7 +624,8 @@ hr {
 		}
 		.title {
 			padding-right: 0;
-			padding-left: 10px;
+			padding-left: 0px;
+            padding-top: 15px;
 		}
 		.description {
 			padding-left: 0;
@@ -965,6 +966,9 @@ time.blog-post-published-date {
     }
 }
 
+a.blog-back-home {
+    padding: 20px 0;
+}
 
 
 /* ===============================
@@ -1087,7 +1091,7 @@ a.btn.ecombasket-summary-link {
             }
         }
         .form-group.productlist-search .btn {
-            height: 45px;
+            height: 42px;
             position: relative;
             top: 1px;
             @media @mobile {
