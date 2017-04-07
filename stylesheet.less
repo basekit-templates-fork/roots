@@ -117,8 +117,19 @@
 }
 
 @media @tablet {
-	.widget .extendednavigation ul li:hover ul {
+    .widget .extendednavigation ul li:hover ul {
         margin: 14px 0 0;
+    }
+	
+
+    .widget .extendednavigation ul li.folder:hover ul {
+        border-bottom: 0;
+        padding-bottom: 0;
+	position: relative;
+    }
+	
+    .widget .extendednavigation ul li:last-child.folder ul {
+	margin-bottom: 15px;
     }
 }
 
@@ -132,12 +143,6 @@
     a, .text {
         color: @font-swatch6-color-hover;
     }
-}
-
-// Nav Folder
-.widget .extendednavigation ul li.folder:hover {
-    border-bottom: 0;
-    padding-bottom: 0;
 }
 
 /* Fix for nav overlay on editor */
