@@ -10,12 +10,37 @@
 
     // Stylesheet overrides
     // -----------------------------
+    
 
-
-    .container {
+    .main {
         width: 100%;
-        max-width: 100%;
+        max-width: 1024px;
         padding: 0;
+        border: 0;
+        
+        @media only screen and (max-width: 1140px) {
+            padding: 0;
+            border: 0;
+            margin: 0;
+        }
+    }
+    
+    .canvas {
+        border: 0;
+    }
+    
+    
+    [data-widget-type="gallery"] {
+        padding: 3em 3em 0;
+        
+        @media @mobile {
+            padding: 1.5em 1.5em 0;   
+        }
+    }
+    
+    .widget.extendednavigation {
+        margin-top: 0;
+        padding-top: 2%;
     }
 
 
@@ -29,10 +54,19 @@
     #page-zones__main:empty,
     #page-zones__main > .widget:not([data-name="row"]),
     .row:not(.row--width-no-padding) .row__container {
-        max-width: ~'calc(1200px - 10%)';
+        max-width: 1024px;
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
+        padding-left: 3em;
+        padding-right: 3em;
+    }
+    [data-rowtype="image-text-5a"],
+    [data-rowtype="image-text-5b"],
+    [data-rowtype="hero-7a"]{
+        .row__container {
+            width: 100% !important;
+            max-width: 100% !important;
+        }
     }
     
     
@@ -41,13 +75,21 @@
     #page-zones__main > .widget:not([data-name="row"]) + [data-name="row"]:not(:last-child),
     &.edit #page-zones__main-overlay + .widget:not([data-name="row"]),
     #page-zones__main > .widget:not([data-name="row"]):first-child {
-        margin-top: 20px;
+        margin-top: 3em;
+        
+         @media @mobile {
+            margin-top: 1.5em;
+        }
     }
 
     
     // Move spacing to last widget in the main zone (not sections)
     #page-zones__main > .widget:not([data-name="row"]):last-child {
-        margin-bottom: 20px;
+        margin-bottom: 3em;
+        
+         @media @mobile {
+            margin-bottom: 1.5em;
+        }
     }
     
     
